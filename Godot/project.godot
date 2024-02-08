@@ -11,6 +11,11 @@ config_version=5
 [application]
 
 config/name="GodotProject1"
-run/main_scene="res://hw4.tscn"
+run/main_scene="res://HW4/hw4.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=900

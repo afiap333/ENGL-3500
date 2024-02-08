@@ -1,81 +1,76 @@
-[gd_scene load_steps=10 format=3 uid="uid://di2j6radb2jlm"]
+[gd_scene load_steps=10 format=3 uid="uid://8rdkmhjxorwt"]
 
 [ext_resource type="Texture2D" uid="uid://bai8pan27f7vx" path="res://Untitled design (30).png" id="1_chsxx"]
 [ext_resource type="Texture2D" uid="uid://1a4cvpad3xtd" path="res://HW4/1-removebg-preview (2).png" id="2_yk47k"]
-[ext_resource type="Texture2D" uid="uid://cik2g20waj62b" path="res://HW4/2-removebg-preview (3).png" id="3_l55i5"]
+[ext_resource type="Texture2D" uid="uid://cik2g20waj62b" path="res://HW4/Images/2-removebg-preview (3).png" id="3_l55i5"]
 [ext_resource type="Script" path="res://Scripts/Rotate.gd" id="4_r3e5y"]
-[ext_resource type="Texture2D" uid="uid://du1wcuw64j02d" path="res://HW4/3-removebg-preview (1).png" id="5_g3oyu"]
-[ext_resource type="Texture2D" uid="uid://d1q0nt0p7pcik" path="res://HW4/4-removebg-preview.png" id="6_pxdgx"]
-[ext_resource type="Texture2D" uid="uid://btsg0d7ka3uye" path="res://HW4/5-removebg-preview (1).png" id="7_7lltw"]
-[ext_resource type="Texture2D" uid="uid://cmxw63x5py1th" path="res://HW4/7-removebg-preview.png" id="8_pj3rr"]
-[ext_resource type="Texture2D" uid="uid://d3ci11kvqpt7v" path="res://HW4/6-removebg-preview.png" id="9_smmoa"]
+[ext_resource type="Texture2D" uid="uid://du1wcuw64j02d" path="res://HW4/Images/3-removebg-preview (1).png" id="5_g3oyu"]
+[ext_resource type="Texture2D" uid="uid://d1q0nt0p7pcik" path="res://HW4/Images/4-removebg-preview.png" id="6_pxdgx"]
+[ext_resource type="Texture2D" uid="uid://btsg0d7ka3uye" path="res://HW4/Images/5-removebg-preview (1).png" id="7_7lltw"]
+[ext_resource type="Texture2D" uid="uid://cmxw63x5py1th" path="res://HW4/Images/7-removebg-preview.png" id="8_pj3rr"]
+[ext_resource type="Texture2D" uid="uid://d3ci11kvqpt7v" path="res://HW4/Images/6-removebg-preview.png" id="9_smmoa"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -11.0
-offset_top = -33.0
-offset_right = 1170.0
+offset_top = -161.0
+offset_right = 2014.0
 offset_bottom = 1887.0
 texture = ExtResource("1_chsxx")
 
-[node name="Node2D" type="Node2D" parent="TextureRect"]
-position = Vector2(585, 358)
+[node name="1-removebg-preview(2)" type="Sprite2D" parent="."]
+position = Vector2(979, 431)
+scale = Vector2(0.3675, 0.356)
+texture = ExtResource("2_yk47k")
+script = ExtResource("4_r3e5y")
+
+[node name="Node2D" type="Node2D" parent="1-removebg-preview(2)"]
+position = Vector2(2.23877, 21.875)
+scale = Vector2(2.98507, 3.125)
 script = ExtResource("4_r3e5y")
 rotation_speed = 0.01
 
-[node name="6-removebg-preview" type="Sprite2D" parent="TextureRect/Node2D"]
-position = Vector2(176.511, -122.919)
+[node name="6-removebg-preview" type="Sprite2D" parent="1-removebg-preview(2)/Node2D"]
+position = Vector2(-257.75, -183)
 scale = Vector2(0.158043, 0.159674)
 texture = ExtResource("9_smmoa")
 
-[node name="Node2D" type="Node2D" parent="TextureRect/Node2D/6-removebg-preview"]
-position = Vector2(-6.57568, -5.97559)
-scale = Vector2(6.57522, 5.97556)
+[node name="Node2D" type="Node2D" parent="1-removebg-preview(2)/Node2D/6-removebg-preview"]
+position = Vector2(3.09422, -6.77)
 script = ExtResource("4_r3e5y")
-rotation_speed = 0.009
+rotation_speed = 0.03
 
-[node name="7-removebg-preview" type="Sprite2D" parent="TextureRect/Node2D/6-removebg-preview/Node2D"]
-position = Vector2(51.7109, -17.4605)
-scale = Vector2(0.160868, 0.173842)
+[node name="7-removebg-preview" type="Sprite2D" parent="1-removebg-preview(2)/Node2D/6-removebg-preview/Node2D"]
+position = Vector2(354.336, 213.581)
 texture = ExtResource("8_pj3rr")
 
-[node name="4-removebg-preview" type="Sprite2D" parent="TextureRect/Node2D"]
-position = Vector2(-209.511, 169.688)
+[node name="4-removebg-preview" type="Sprite2D" parent="1-removebg-preview(2)/Node2D"]
+position = Vector2(239.904, -153.517)
 scale = Vector2(0.114046, 0.114753)
 texture = ExtResource("6_pxdgx")
 
-[node name="2-removebg-preview(3)" type="Sprite2D" parent="TextureRect/Node2D"]
-position = Vector2(0, 129)
+[node name="2-removebg-preview(3)" type="Sprite2D" parent="1-removebg-preview(2)/Node2D"]
+position = Vector2(182, 2)
 scale = Vector2(0.135103, 0.132404)
 texture = ExtResource("3_l55i5")
 script = ExtResource("4_r3e5y")
 
-[node name="3-removebg-preview(1)" type="Sprite2D" parent="TextureRect/Node2D"]
-position = Vector2(-506, 26)
+[node name="3-removebg-preview(1)" type="Sprite2D" parent="1-removebg-preview(2)/Node2D"]
+position = Vector2(-5.75, 304)
 scale = Vector2(0.179472, 0.187601)
 texture = ExtResource("5_g3oyu")
 
-[node name="5-removebg-preview(1)" type="Sprite2D" parent="TextureRect/Node2D"]
-position = Vector2(-367, -164)
+[node name="5-removebg-preview(1)" type="Sprite2D" parent="1-removebg-preview(2)/Node2D"]
+position = Vector2(-205.75, 131)
 scale = Vector2(0.152019, 0.152517)
 texture = ExtResource("7_7lltw")
 
-[node name="Node2D" type="Node2D" parent="TextureRect/Node2D/5-removebg-preview(1)"]
+[node name="Node2D" type="Node2D" parent="1-removebg-preview(2)/Node2D/5-removebg-preview(1)"]
 position = Vector2(-13.1561, 6.55648)
-scale = Vector2(44.9468, 37.383)
 script = ExtResource("4_r3e5y")
-rotation_speed = 0.009
+rotation_speed = 0.03
 
-[node name="7-removebg-preview" type="Sprite2D" parent="TextureRect/Node2D/5-removebg-preview(1)/Node2D"]
-position = Vector2(3.01854, -9.18612)
-scale = Vector2(0.0271486, 0.0311319)
+[node name="7-removebg-preview" type="Sprite2D" parent="1-removebg-preview(2)/Node2D/5-removebg-preview(1)/Node2D"]
+position = Vector2(322.325, -308.162)
 texture = ExtResource("8_pj3rr")
-
-[node name="Node" type="Node" parent="TextureRect/Node2D"]
-
-[node name="1-removebg-preview(2)" type="Sprite2D" parent="."]
-position = Vector2(573.25, 318)
-scale = Vector2(0.335, 0.32)
-texture = ExtResource("2_yk47k")
-script = ExtResource("4_r3e5y")
