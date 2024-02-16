@@ -35,4 +35,6 @@ Change some of its settings to make it behave."
 
 [node name="Crate" parent="." instance=ExtResource("4_5fnyh")]
 position = Vector2(456, 384)
-gravity_scale = 0.61
+mass = 0.01
+gravity_scale = 1.143
+angular_damp = 8.672
