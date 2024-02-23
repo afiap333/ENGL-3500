@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhpb51n2vpx4w"]
+
+[ext_resource type="PackedScene" uid="uid://k0xcla0bq758" path="res://modern_cabinet_hutch_free/scene.gltf" id="1_8ni4v"]
+[ext_resource type="PackedScene" uid="uid://uf4v2p7b3sh1" path="res://modern_cabinet_hutch_free/toaster/scene.gltf" id="2_s4n6o"]
+[ext_resource type="PackedScene" uid="uid://ccxflx15lfcdc" path="res://modern_cabinet_hutch_free/toaster/iphone13_pro__5_colors__baked_and_optimized/scene.gltf" id="3_fimd5"]
+[ext_resource type="PackedScene" uid="uid://fghmem2fmg7d" path="res://modern_cabinet_hutch_free/toaster/knife_low-poly/scene.gltf" id="4_f88nk"]
+[ext_resource type="PackedScene" uid="uid://ddb06vixh2fsh" path="res://modern_cabinet_hutch_free/toaster/podloga/scene.gltf" id="5_mhun1"]
+[ext_resource type="AudioStream" uid="uid://dmagt1syusdgy" path="res://Knocking-on-door-five-knocks-www.fesliyanstudios.com.mp3" id="6_fvq3j"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pn5rc"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_spmwx"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1fcup"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(5.16701, 0, 0, 0, -0.00794117, -4.35225, 0, 0.999968, -0.0345631, 0.00626057, 2.78611, -4.36396)
+mesh = SubResource("PlaneMesh_pn5rc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_spmwx")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.985515, 0.16959, 0, -0.16959, 0.985515, 0, 2.47936, 0.211028)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.43292, -0.853896, 0.288863, 0.896299, -0.373603, 0.238893, -0.09607, 0.362329, 0.927086, -2.8672, 4.51869, 14.0121)
+
+[node name="Sketchfab_Scene3" parent="." instance=ExtResource("1_8ni4v")]
+transform = Transform3D(-2.51509, 0, 0.00253087, 0, 1.46246, 0, -0.0133927, 0, -2.1058, 1.89977, 0.226467, -3.52217)
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("1_8ni4v")]
+transform = Transform3D(-2.21113, 0, -0.0537003, 0, 1.51044, 0, 0.060681, 0, -1.95677, -2.53561, 0.13847, -3.5621)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_s4n6o")]
+transform = Transform3D(0.0379536, 0, -0.363559, 0, 0.420703, 0, 0.384524, 0, 0.0358843, -2.20346, 1.83273, -3.52194)
+
+[node name="Sketchfab_Scene4" parent="." instance=ExtResource("3_fimd5")]
+transform = Transform3D(2.1416, 0, 0, 0, 2.95039, 0, 0, 0, 0.712489, 3.42469, 1.62819, -3.5539)
+
+[node name="Sketchfab_Scene5" parent="." instance=ExtResource("4_f88nk")]
+transform = Transform3D(3.7229, 0, 0, 0, 1.13577, 0, 0, 0, 2.86852, 1.19109, 1.67236, -3.68218)
+
+[node name="Sketchfab_Scene6" parent="." instance=ExtResource("5_mhun1")]
+transform = Transform3D(0.0310984, 0, 0, 0, 0.214653, 0, 0, 0, 0.16768, 0.0219827, 0.121231, 11.8236)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fvq3j")
+volume_db = 0.08
+autoplay = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(19.6566, 0, 0, 0, -4.35205, 0.184989, 0, -0.0425029, -4.35092, 0.0340173, 21.757, -1.42711)
+mesh = SubResource("PlaneMesh_pn5rc")
+skeleton = NodePath("../MeshInstance3D")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_spmwx")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00467867, 1.67159, 0.00533601, -6.70208, 0.00116693, 3.72544e-06, 2.32525e-17, -0.00125451, 7.11002, -5.38299, 0.548103, 0)
+mesh = SubResource("PlaneMesh_1fcup")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00467867, 1.67159, 0.00533601, -6.70208, 0.00116693, 3.72544e-06, 2.32525e-17, -0.00125451, 7.11002, 4.58714, 0.548103, 0)
+mesh = SubResource("PlaneMesh_1fcup")

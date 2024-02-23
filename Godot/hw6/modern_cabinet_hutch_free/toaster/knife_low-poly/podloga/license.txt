@@ -1,0 +1,8 @@
+Model Information:
+* title:	Podloga
+* source:	https://sketchfab.com/3d-models/podloga-7e5c298e4122405caf8aebb09428b083
+* author:	stasiek63 (https://sketchfab.com/stasiek63)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
