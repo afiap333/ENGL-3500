@@ -11,15 +11,13 @@ INCLUDE upstairsHall.ink
 INCLUDE library.ink
 INCLUDE secret.ink
 INCLUDE basement.ink
-INCLUDE ghosts.ink
-
 
 
 
 
 
 VAR hints=3
-VAR ghosts= ->ghost1
+VAR ghosts=5
 -> END
 === function came_from(-> x)
     ~ return TURNS_SINCE(x) == 0

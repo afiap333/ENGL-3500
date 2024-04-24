@@ -1,4 +1,5 @@
-A knock sounds out from the front of Aliya's house. Standing in the kitchen, she glances at the clock, confused by who would come knocking at 2 A.M. ->opening
+A knock sounds out from the front of Aliya's house. Standing in the kitchen, she glances at the clock, confused by who would come knocking at 2 A.M.->opening
+#IMAGE:aliya.png
 
 ==opening==
 The knocking gets louder,impatient, and Aliya wonders what she should do.
@@ -6,10 +7,10 @@ The knocking gets louder,impatient, and Aliya wonders what she should do.
 *(scream)->openDoor
 
 ==openDoor==
-she saw an old man, clothes soaked from the rain. An eery smile was on his face, as he raised his fist to knock once more. 
+she sees an old man, clothes soaked from the rain. An eery smile was on his face, as he raised his fist to knock once more. 
 +->previous
 =previous
-You think for a moment if you actually want to do this. 
+Aliya think for a moment if she actually want to do this. 
 *[Grab a weapon just in case]->kitchen
 +[Just open the door]->doorOpened
 ==doorOpened==
@@ -19,39 +20,39 @@ You think for a moment if you actually want to do this.
 +->emptyHanded
 
 =knife
-Knife in hand, you open the door. The man's smile grows as he lays eyes on you.
-*You[ scream and slam the door] scream and slam the door in his face.->opening
+Knife in hand, Aliya opens the door. The man's smile grows as he lays eyes on Aliya.
+*She[ scream and slam the door] screams and slam the door in his face.->opening
 *Wait for him to say something->explanation
 =toaster
-Toaster in hand, you open the door. The man's smile grows as he lays eyes on you.
-*You[ scream and slam the door] scream and slam the door in his face.->opening
-*Wait[ for him to say something]ing, you see if he says anything.->explanation
+Toaster in hand, Aliya opens the door. The man's smile grows as he lays eyes on Aliya.
+*She[ scream and slam the door] screams and slam the door in his face.->opening
+*Wait[ for him to say something]ing, Aliya sees if he says anything.->explanation
 =phone
-Phone in hand, you open the door. The man's smile grows as he lays eyes on you.
-*(screamed)You[ scream and slam the door] scream and slam the door in his face.->opening
-*Wait[ for him to say something]ing, you see if he says anything.->explanation
+Phone in hand, Aliya opens the door. The man's smile grows as he lays eyes on Aliya.
+*(screamed)Aliya[ scream and slam the door] screams and slam the door in his face.->opening
+*Wait[ for him to say something]ing, Aliya sees if he says anything.->explanation
 =emptyHanded
-You open the door.The man's smile grows as he lays eyes on you.
-*You[ scream and slam the door] scream and slam the door in his face.->opening
-*Wait[ for him to say something]ing, you see if he says anything. ->explanation
+Aliya opens the door.The man's smile grows as he lays eyes on Aliya.
+*[scream and slam the door] Aliya screams and slams the door in his face.->opening
+*Wait[ for him to say something]ing, Aliya sees if he says anything. ->explanation
 =again
-You open the door.
-*Wait[ for him to say something]ing, you see if he says anything. ->explanation
+Aliya opens the door.
+*Wait[ for him to say something]ing, Aliya sees if he says anything. ->explanation
 ==kitchen==
-You glance around the kitchen to see what you can grab to defend yourself. 
-*You grab [a knife] the sharpest knife you can find, ->knife
-*You grab [your toaster] the heaviest thing you can find. A toaster.->toaster
-*You grab[ your phone] the phone you had left on the counter, dialing 911 just in case.->phone
+Aliya glances around the kitchen to see what she grab to defend herself. 
+*Aliya grabs [a knife] the sharpest knife he find, ->knife
+*Aliya grabs [her toaster] the heaviest thing she can find. A toaster.->toaster
+*Aliya grabs[ her phone] her phone she left on the counter, dialing 911 just in case.->phone
 =knife
-The knocking continues as you return to the door. ->doorOpened.knife
+The knocking continues as Aliya returns to the door. ->doorOpened.knife
 =toaster
-The knocking continues as you return to the door. ->doorOpened.toaster
+The knocking continues as Aliya returns to the door. ->doorOpened.toaster
 =phone
-The knocking continues as you return to the door. ->doorOpened.toaster
+The knocking continues as Aliya return to the door. ->doorOpened.toaster
 ==explanation==
 "You've inherited a house," says the man. 
-*"[What]," Aliya says.
-*"[You're crazy]," Aliya says.
+*[What]"What," Aliya says.
+*[you're crazy]"You're crazy," Aliya says.
 -"Your aunt left it to you,"
 ->arrive
 

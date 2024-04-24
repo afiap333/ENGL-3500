@@ -1,2 +1,2 @@
 ===arrive===
-You arrive at the house and go inside. ->entered
+Aliya arrives at the house and go inside. ->entered
