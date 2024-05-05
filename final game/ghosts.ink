@@ -1,7 +1,7 @@
 ===ghost1===
 "Hello!" yells a voice.
 Aliya screams. 
-->END
-//VAR ghosts=->ghost2
+~ghosts=->ghost2
+->arrive
 ===ghost2===
 ->END

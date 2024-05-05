@@ -10,14 +10,15 @@ INCLUDE home.ink
 INCLUDE upstairsHall.ink
 INCLUDE library.ink
 INCLUDE secret.ink
+INCLUDE ghosts.ink
 INCLUDE basement.ink
 
-
-
+Welcome to Through the Halls
++[Click to start the game!]->home
 
 
 VAR hints=3
-VAR ghosts=5
+VAR ghosts=->ghost1
 -> END
 === function came_from(-> x)
     ~ return TURNS_SINCE(x) == 0
